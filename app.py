@@ -1,4 +1,4 @@
-dz"""
+"""
 AI Event Master Planner (India) - Prototype
 -------------------------------------------
 A single-file Streamlit app that collects event details, applies a fixed
