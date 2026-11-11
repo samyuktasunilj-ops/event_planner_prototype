@@ -1,4 +1,4 @@
-"""
+dz"""
 AI Event Master Planner (India) - Prototype
 -------------------------------------------
 A single-file Streamlit app that collects event details, applies a fixed
@@ -213,7 +213,7 @@ def generate_master_plan(prompt: str) -> str:
         raise RuntimeError(
             "GEMINI_API_KEY not found. Add it in Replit: Tools > Secrets, then restart the app."
         )
-    response = client.models.generate_content(model=MODEL_NAME, contents=prompt)
+    response = client.models.generate_content(model="gemini-3.8-flash", contents=prompt)
     if not response.text:
         raise RuntimeError("Gemini returned an empty response. Please try again.")
     return response.text
